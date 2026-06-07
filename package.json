@@ -1,0 +1,14 @@
+{
+  "name": "jobfinder-root",
+  "version": "1.0.0",
+  "description": "AI HR Email Finder and Bulk Cold Emailer",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "server": "cd backend && node server.js",
+    "client": "cd frontend && npm run dev",
+    "dev": "npx concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
